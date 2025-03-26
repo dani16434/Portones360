@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portones 360</title>
+    <!-- Importando la fuente Contrail One -->
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Contrail One', cursive;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave y difusa */
+}
+    header {
+    background: #e0e0e0;
+    color: #f99e00;
+    padding: 15px 30px; /* Reducir padding superior e inferior */
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+        header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;  /* Asegura que la imagen llene el contenedor sin distorsionarse */
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+        header img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #f99e00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e68a00;
+        }
+
+        section {
+            padding: 50px 20px;
+            background-color: #e0e0e0;
+        }
+
+        .separador {
+            border-top: 3px solid #f99e00;
+            margin: 40px 0;
+            width: 100%;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #f99e00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background: #e68a00;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #333;
+            color: #f99e00;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .whatsapp {
+            background: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .whatsapp:hover {
+            background: #128C7E;
+        }
+
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 30px 0;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #inicio {
+            background: url('1216548.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 120px 20px;
+            text-shadow: 2px 2px 4px #333;
+        }
+
+        #inicio h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        #inicio p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        #video-container {
+            margin: 50px 0;
+        }
+
+        #video-container iframe {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 28px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+
+            .boton {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+
+            .galeria img {
+                max-width: 100%;
+            }
+
+            #video-container iframe {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Portones.png" alt="Logo de Portones 360">
+        <h1>Portones 360</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bienvenidos a Portones 360</h2>
+        <p><strong>Tu acceso, nuestra prioridad.</strong></p>
+        <p>En <strong>Portones 360</strong>, somos expertos en la instalación, mantenimiento y reparación de portones automáticos. Con más de <strong>10 años de experiencia</strong>, nos destacamos por ofrecer soluciones de calidad que garantizan la seguridad y comodidad de tu hogar o negocio.</p>
+        <p>Nos adaptamos a tus necesidades, con un equipo altamente capacitado y productos de alta durabilidad. Ya sea una nueva instalación o mantenimiento de sistemas existentes, te brindamos confianza y seguridad en todo el proceso.</p>
+        <a href="#contacto" class="boton">Contáctanos</a>
+    </section>
+
+    <div class="separador"></div>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <div style="background: #f99e00; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 30%; text-align: center;">
+                <h3>🔧 Instalación de portones</h3>
+                <p>Instalamos cualquier tipo de portón, ya sea automático o manual, tanto para uso residencial como comercial.</p>
+            </div>
+            <div style="background: #f99e00; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 30%; text-align: center;">
+                <h3>⚙ Mantenimiento y reparación</h3>
+                <p>Realizamos mantenimiento preventivo y correctivo de portones, asegurando su funcionalidad y seguridad.</p>
+            </div>
+            <div style="background: #f99e00; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 30%; text-align: center;">
+                <h3>🛒 Venta de repuestos</h3>
+                <p>Vendemos repuestos originales para portones automáticos y manuales, con piezas de alta calidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <section id="galeria">
+        <h2>Nuestra Galería</h2>
+        <div class="galeria">
+            <img src="img1.jpg" alt="Portón Automático">
+            <img src="img2.jpg" alt="Portón Automático">
+        </div>
+    </section>
+
+    <section id="video-container">
+        <video controls>
+            <source src="vid.1.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: info@portones360.com</p>
+        <p>WhatsApp: <a href="https://wa.me/50687886730" class="whatsapp">Escríbenos por WhatsApp</a></p>
+        <p>Teléfono: +506 24100360</p>
+        <p>Facebook: Portones 360</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Portones 360 - Todos los derechos reservados.
+    </footer>
+</body>
+</html>
